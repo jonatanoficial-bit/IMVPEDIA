@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dicionário de Teoria Musical</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="lang-pt">
+  <!-- Cabeçalho / Menu superior -->
+  <header>
+    <h1>Dicionário de Teoria Musical</h1>
+    <!-- Navegação de Idiomas -->
+    <nav class="lang-switch">
+      <button id="btn-pt" onclick="switchLang('pt')" class="active">PT</button>
+      <button id="btn-en" onclick="switchLang('en')">EN</button>
+      <button id="btn-es" onclick="switchLang('es')">ES</button>
+    </nav>
+  </header>
+
+  <!-- Menu de Categorias -->
+  <nav class="categories">
+    <a href="#sec-escalas">Escalas</a>
+    <a href="#sec-intervalos">Intervalos</a>
+    <a href="#sec-ritmo">Ritmo</a>
+    <a href="#sec-notacao">Notação</a>
+    <a href="#sec-cifras">Cifras</a>
+    <a href="#sec-acordes">Acordes & Harmonia</a>
+    <a href="#sec-historia">História</a>
+  </nav>
+
+  <!-- Seção: Notas e Escalas -->
+  <section id="sec-escalas" class="category-section">
+    <h2 class="pt">Escalas</h2>
+    <h2 class="en">Scales</h2>
+    <h2 class="es">Escalas</h2>
+
+    <p class="pt">
+      <strong>Escala</strong> é uma sequência ordenada de notas musicais, geralmente
+      dentro de uma oitava. As escalas servem como base para melodias e harmonias.
+      As principais são as <em>escalas maiores</em> (de som alegre) e as 
+      <em>escalas menores</em> (de som mais triste ou tenso). Por exemplo, a escala 
+      de Dó Maior é Dó-Ré-Mi-Fá-Sol-Lá-Si (todas notas naturais). Já a escala de 
+      Lá menor natural é Lá-Si-Dó-Ré-Mi-Fá-Sol (compartilha as mesmas notas de Dó 
+      Maior, mas começando em Lá). Além dessas, existem escalas menores harmônica e 
+      melódica (variantes da menor), escalas <em>cromáticas</em> (que sobem ou descem 
+      por semitons) e modos gregos (como Jônio, Dório, Frígio etc., cada um com um 
+      caráter distinto). As escalas definem a <strong>tonalidade</strong> de uma 
+      música – ou seja, quais notas e acordes soam “consonantes” entre si. Cada 
+      tonalidade possui uma <em>armadura de clave</em> indicando quais notas são 
+      sustenidas ou bemóis fixos. Por exemplo, a tonalidade de Sol Maior tem Fá#. 
+      Conhecer escalas ajuda a entender a atmosfera da música e fornece um vocabulário 
+      para composição e improvisação.
+    </p>
+    <p class="en">
+      <strong>Scales</strong> are ordered sequences of musical notes, usually spanning 
+      one octave. Scales serve as the foundation for melodies and harmonies. The main 
+      types are <em>major scales</em> (often perceived as “happy” sounding) and 
+      <em>minor scales</em> (often “sad” or tense sounding). For example, the C Major 
+      scale is C-D-E-F-G-A-B (all natural notes). The A natural minor scale is 
+      A-B-C-D-E-F-G (the same notes as C Major, but starting on A). In addition, there 
+      are harmonic and melodic minor scales (variants of the minor scale), 
+      <em>chromatic scales</em> (which ascend or descend in half-step increments), and 
+      the seven Greek modes (Ionian, Dorian, Phrygian, etc., each with a distinct 
+      flavor). Scales define a musical <strong>key</strong> – that is, which notes and 
+      chords sound consonant together. Each key is associated with a <em>key signature</em> 
+      indicating which notes are consistently sharp or flat. For example, the key of G 
+      major has an F#. Knowing scales helps musicians understand a piece’s mood and 
+      provides a palette for composition and improvisation.
+    </p>
+    <p class="es">
+      <strong>Escalas</strong> son secuencias ordenadas de notas musicales, por lo 
+      general a lo largo de una octava. Las escalas sirven de base para las melodías 
+      y armonías. Los tipos principales son las <em>escalas mayores</em> (de sonido 
+      alegre) y las <em>escalas menores</em> (de sonido más triste o tenso). Por 
+      ejemplo, la escala de Do Mayor es Do-Re-Mi-Fa-Sol-La-Si (todas notas naturales). 
+      La escala de La menor natural es La-Si-Do-Re-Mi-Fa-Sol (comparte las mismas notas 
+      que Do Mayor, pero empezando en La). Además, existen la escala menor armónica y 
+      melódica (variantes de la menor), las escalas <em>cromáticas</em> (que suben o 
+      bajan por semitonos) y los modos griegos (Jónico, Dórico, Frigio, etc., cada uno 
+      con un carácter distinto). Las escalas definen la <strong>tonalidad</strong> de 
+      una obra – es decir, qué notas y acordes suenan “consonantes” entre sí. Cada 
+      tonalidad tiene una <em>armadura</em> que indica qué notas llevan sostenido o 
+      bemol de forma fija. Por ejemplo, la tonalidad de Sol Mayor tiene Fa#. Conocer 
+      las escalas ayuda a comprender el ambiente de la música y proporciona un 
+      vocabulario para componer e improvisar.
+    </p>
+  </section>
+
+  <!-- Seção: Intervalos -->
+  <section id="sec-intervalos" class="category-section">
+    <h2 class="pt">Intervalos</h2>
+    <h2 class="en">Intervals</h2>
+    <h2 class="es">Intervalos</h2>
+
+    <p class="pt">
+      Um <strong>intervalo musical</strong> é a distância entre duas notas, medida em 
+      graus da escala. Por exemplo, entre Dó e Sol há um intervalo de quinta (contando 
+      Dó(1), Ré(2), Mi(3), Fá(4), Sol(5)). Os intervalos têm também qualidades: podem 
+      ser <em>justos</em> (no caso de 4ª, 5ª e 8ª) ou <em>maiores/menores</em> (2ª, 
+      3ª, 6ª, 7ª), além de aumentados ou diminutos quando extrapolam essas proporções. 
+      Por exemplo, de Dó para Mi é uma 3ª maior; de Dó para Mi♭ é uma 3ª menor. Os 
+      intervalos definem a estrutura interna das escalas e acordes – acordes são 
+      essencialmente combinações de intervalos tocados simultaneamente. Além disso, a 
+      sensação de <em>consonância</em> (estabilidade) ou <em>dissonância</em> (tensão) 
+      em música está ligada aos intervalos: por exemplo, oitavas e quintas soam 
+      consonantes, enquanto segundas menores soam bastante dissonantes. Estudar 
+      intervalos ajuda no reconhecimento auditivo (treinando o ouvido a identificar 
+      saltos de nota) e na compreensão de como melodias e harmonias são construídas.
+    </p>
+    <p class="en">
+      A <strong>musical interval</strong> is the distance between two notes, measured 
+      in scale steps. For example, from C up to G is an interval of a fifth (counting 
+      C(1), D(2), E(3), F(4), G(5)). Intervals also have quality designations: they 
+      can be <em>perfect</em> (for 4ths, 5ths, and octaves) or <em>major/minor</em> 
+      (for 2nds, 3rds, 6ths, 7ths), and can further be augmented or diminished if 
+      altered by semitones beyond those basic forms. For instance, C to E is a Major 
+      3rd; C to E♭ is a minor 3rd. Intervals define the internal structure of scales 
+      and chords – chords are essentially combinations of intervals played 
+      together. Moreover, the feeling of <em>consonance</em> (stability) or 
+      <em>dissonance</em> (tension) in music is linked to intervals: for example, 
+      octaves and fifths sound consonant, whereas minor seconds sound very dissonant. 
+      Studying intervals aids in ear training (learning to recognize leaps between 
+      notes by ear) and in understanding how melodies and harmonies are built.
+    </p>
+    <p class="es">
+      Un <strong>intervalo musical</strong> es la distancia entre dos notas, medida en 
+      grados de la escala. Por ejemplo, de Do hasta Sol hay un intervalo de quinta 
+      (contando Do(1), Re(2), Mi(3), Fa(4), Sol(5)). Los intervalos también tienen 
+      calidades: pueden ser <em>justos</em> (en el caso de 4ª, 5ª y 8ª) o 
+      <em>mayores/menores</em> (para 2ª, 3ª, 6ª, 7ª), y además pueden ser aumentados o 
+      disminuidos si se alteran por semitonos más allá de esas formas básicas. Por 
+      ejemplo, de Do a Mi es una 3ª Mayor; de Do a Mi♭ es una 3ª menor. Los intervalos 
+      definen la estructura interna de las escalas y acordes – los acordes son 
+      esencialmente combinaciones de intervalos tocados simultáneamente. Además, la 
+      sensación de <em>consonancia</em> (estabilidad) o <em>disonancia</em> (tensión) 
+      en la música está vinculada a los intervalos: por ejemplo, las octavas y 
+      quintas suenan consonantes, mientras que las segundas menores suenan muy 
+      disonantes. Estudiar los intervalos ayuda en el entrenamiento auditivo (oído 
+      musical para reconocer saltos de notas) y en la comprensión de cómo se 
+      construyen melodías y armonías.
+    </p>
+  </section>
+
+  <!-- Seção: Ritmo e Métrica -->
+  <section id="sec-ritmo" class="category-section">
+    <h2 class="pt">Ritmo e Métrica</h2>
+    <h2 class="en">Rhythm & Meter</h2>
+    <h2 class="es">Ritmo y Métrica</h2>
+
+    <p class="pt">
+      <strong>Ritmo</strong> é o elemento da música relacionado ao tempo – ele organiza 
+      sons e silêncios numa pulsação. O ritmo começa com a noção de <em>pulso</em> 
+      (batidas constantes, como os batimentos de um coração) e de <em>acento</em> 
+      (algumas dessas batidas são acentuadas). A forma como os pulsos se agrupam dá 
+      origem ao <strong>compasso</strong> (métrica). Por exemplo, no compasso 4/4 há 
+      grupos de 4 batidas, normalmente com acento na primeira. Já um 3/4 tem grupos 
+      de 3 batidas (acentuando a primeira de cada trio). As <strong>figuras rítmicas</strong> 
+      representam a duração dos sons: semibreve (1 inteira), mínima (1/2), semínima 
+      (1/4), colcheia (1/8), semicolcheia (1/16), etc., e cada uma tem sua respectiva 
+      pausa (silêncio) de igual duração. Também existem sinais como o <em>ponto de 
+      aumento</em> (que prolonga a nota em metade do valor) e a <em>ligadura</em> 
+      (que une durações). Combinar diferentes valores rítmicos dentro do compasso 
+      cria os diversos padrões de ritmo. Por exemplo, um ritmo de marcha enfatiza os 
+      tempos 1 e 3 no 4/4, enquanto um ritmo de valsa enfatiza o 1 no 3/4. Entender 
+      ritmo e métrica é essencial para executar música com precisão e sentir a 
+      “groove” ou swing característico de cada gênero.
+    </p>
+    <p class="en">
+      <strong>Rhythm</strong> is the aspect of music related to time – it organizes 
+      sounds and silences into a pulse. Rhythm starts with the concept of the 
+      <em>beat</em> (steady underlying pulses, like a heartbeat) and of <em>accent</em> 
+      (some of those beats are emphasized). The way beats group together gives rise 
+      to the <strong>meter</strong> (time signature). For example, in 4/4 meter there 
+      are groups of 4 beats, usually with an accent on the first beat. In 3/4, beats 
+      group in threes (accent on the first of each trio). <strong>Note values</strong> 
+      indicate the duration of sounds: whole note (1), half note (1/2), quarter note 
+      (1/4), eighth note (1/8), sixteenth (1/16), etc., each with a corresponding 
+      rest (silence) of the same length. There are also symbols like the <em>dotted 
+      note</em> (which adds half of the note’s value) and the <em>tie</em> (which 
+      connects notes to sustain sound). Combining different rhythmic values within a 
+      measure creates various rhythm patterns. For example, a march rhythm accents 
+      beats 1 and 3 in 4/4, while a waltz rhythm accents beat 1 in 3/4. Understanding 
+      rhythm and meter is essential to perform music accurately and to feel the 
+      characteristic "groove" or swing of each style.
+    </p>
+    <p class="es">
+      El <strong>ritmo</strong> es el elemento de la música relacionado con el tiempo: 
+      organiza sonidos y silencios en una pulsación. El ritmo comienza con la noción 
+      de <em>pulso</em> (latidos constantes, como los latidos del corazón) y de 
+      <em>acento</em> (algunos de esos pulsos se acentúan). La forma en que se agrupan 
+      los pulsos da origen al <strong>compás</strong> (métrica). Por ejemplo, en un 
+      compás de 4/4 hay grupos de 4 pulsos, usualmente con acento en el primero. En 
+      3/4, los pulsos se agrupan de a 3 (acento en el primero de cada trío). Las 
+      <strong>figuras rítmicas</strong> representan la duración de los sonidos: redonda 
+      (1 entera), blanca (1/2), negra (1/4), corchea (1/8), semicorchea (1/16), etc., 
+      cada una con su correspondiente silencio de igual duración. También existen 
+      signos como el <em>punto de aumento</em> (que alarga la nota la mitad de su 
+      valor) y la <em>ligadura</em> (que une notas para prolongar el sonido). Combinar 
+      diferentes valores rítmicos dentro del compás crea diversos patrones. Por 
+      ejemplo, un ritmo de marcha acentúa los tiempos 1 y 3 en 4/4, mientras un ritmo 
+      de vals acentúa el tiempo 1 en 3/4. Comprender el ritmo y la métrica es esencial 
+      para ejecutar la música con precisión y sentir el "groove" o swing característico 
+      de cada género.
+    </p>
+  </section>
+
+  <!-- Seção: Notação Musical / Leitura -->
+  <section id="sec-notacao" class="category-section">
+    <h2 class="pt">Notação Musical</h2>
+    <h2 class="en">Musical Notation</h2>
+    <h2 class="es">Notación Musical</h2>
+
+    <p class="pt">
+      A <strong>notação musical tradicional</strong> é o sistema de escrita que permite 
+      representar visualmente os sons. O principal suporte é a <em>partitura</em>, que 
+      consiste em um conjunto de cinco linhas e quatro espaços (a <strong>pauta</strong> 
+      ou pentagrama). Os símbolos das notas musicais são posicionados nessas linhas e 
+      espaços para indicar diferentes alturas (agudos ou graves). Uma <strong>clave</strong> 
+      no início da pauta define o referencial: por exemplo, a <em>Clave de Sol</em> 
+      (🎼) posicionada na segunda linha indica que aquela linha é a nota Sol, sendo usada 
+      para notação de vozes/instrumentos agudos; a <em>Clave de Fá</em> (𝄢) na quarta 
+      linha marca a nota Fá, usada para sons graves (como baixo ou mão esquerda do piano). 
+      Além das notas nas linhas e espaços, utilizam-se <em>linhas suplementares</em> 
+      para notas muito agudas ou muito graves fora do pentagrama. Símbolos de 
+      <strong>acidente</strong> alteram a afinação das notas: o sustenido (♯) sobe meio 
+      tom; o bemol (♭) desce meio tom; o bequadro (♮) cancela o acidente anterior, 
+      retornando à nota natural. Na notação, também encontramos o <strong>compasso</strong> 
+      (indicado por frações como 4/4, 3/4, etc. no início da partitura) e outros sinais 
+      como indicadores de oitava (8va), pausas (silêncios correspondentes às figuras) e 
+      marcações de <strong>dinâmica</strong> (piano, forte, crescendo, etc.) que orientam 
+      a intensidade do som. Ler partitura requer prática, mas permite ao músico executar 
+      peças que nunca ouviu, pois toda a informação sobre quais notas tocar e sua duração 
+      está codificada ali. É a linguagem escrita universal da música erudita e de muitos 
+      outros estilos.
+    </p>
+    <p class="en">
+      <strong>Standard musical notation</strong> is the writing system that allows 
+      sounds to be represented visually. The primary medium is the <em>score</em> or 
+      sheet music, consisting of a staff with five lines and four spaces. Musical 
+      note symbols are placed on these lines or spaces to indicate different pitches 
+      (higher or lower sounds). A <strong>clef</strong> at the beginning of the staff 
+      sets the reference: for example, the <em>treble clef</em> (🎼) on the second line 
+      denotes that line as G (the G above middle C), and is used for higher-pitched 
+      instruments/voices; the <em>bass clef</em> (𝄢) on the fourth line marks that line 
+      as F, used for low-pitched sounds (like bass or the left hand of piano). In 
+      addition to notes on the staff lines and spaces, <em>ledger lines</em> are used 
+      for very high or low notes outside the staff. Symbols called <strong>accidentals</strong> 
+      alter the pitch of notes: a sharp (♯) raises a note by a half step; a flat (♭) 
+      lowers it by a half step; a natural (♮) cancels a previous sharp or flat, 
+      restoring the natural pitch. Notation also includes the <strong>time signature</strong> 
+      (shown as a fraction like 4/4, 3/4, etc., at the beginning of the music) and other 
+      signs such as octave indications (8va), rests (symbols for silence corresponding 
+      to note durations), and <strong>dynamics</strong> markings (piano, forte, crescendo, 
+      etc., indicating volume/intensity). Reading sheet music takes practice, but it 
+      enables a musician to perform pieces they've never heard, since all information 
+      about which notes to play and their timing is encoded on the page. It is the 
+      universal written language of classical music and many other genres.
+    </p>
+    <p class="es">
+      La <strong>notación musical tradicional</strong> es el sistema de escritura que 
+      permite representar visualmente los sonidos. El medio principal es la 
+      <em>partitura</em>, que consiste en un conjunto de cinco líneas y cuatro espacios 
+      (el <strong>pentagrama</strong>). Los símbolos de las notas musicales se colocan en 
+      esas líneas o espacios para indicar distintas alturas (sonidos más agudos o más 
+      graves). Una <strong>clave</strong> al inicio del pentagrama define la referencia: 
+      por ejemplo, la <em>clave de sol</em> (🎼) situada en la segunda línea indica que 
+      esa línea es la nota Sol (el Sol por encima del Do central), y se usa para voces e 
+      instrumentos agudos; la <em>clave de fa</em> (𝄢) en la cuarta línea marca esa línea 
+      como Fa, empleada para sonidos graves (como el bajo o la mano izquierda del piano). 
+      Además de las notas en las líneas y espacios, se usan <em>líneas adicionales</em> 
+      para notas muy agudas o muy graves fuera del pentagrama. Los símbolos llamados 
+      <strong>alteraciones</strong> modifican la afinación de las notas: el sostenido (♯) 
+      sube un semitono la nota; el bemol (♭) la baja un semitono; el becuadro (♮) cancela 
+      una alteración previa, devolviendo la nota a su estado natural. La notación también 
+      incluye el <strong>compás</strong> (indicado con fracciones como 4/4, 3/4, etc. al 
+      inicio de la pieza) y otros signos como indicaciones de octava (8va), silencios 
+      (pausas correspondientes a las figuras) y marcas de <strong>dinámica</strong> 
+      (piano, forte, crescendo, etc., que guían la intensidad). Leer partituras requiere 
+      práctica, pero permite al músico interpretar obras que nunca ha escuchado, ya que 
+      toda la información sobre qué notas tocar y su duración está codificada allí. Es 
+      el idioma escrito universal de la música clásica y de muchos otros estilos.
+    </p>
+  </section>
+
+  <!-- Seção: Cifras (Acordes) -->
+  <section id="sec-cifras" class="category-section">
+    <h2 class="pt">Cifras (Notação de Acordes)</h2>
+    <h2 class="en">Chord Symbols</h2>
+    <h2 class="es">Cifrado de Acordes</h2>
+
+    <p class="pt">
+      As <strong>cifras musicais</strong> são uma forma de notação usada para indicar 
+      acordes de maneira simplificada, muito comum em música popular e partituras de 
+      violão/teclado. Em vez de escrever todas as notas numa partitura, a cifra utiliza 
+      letras e símbolos. Cada letra de A a G representa uma nota ou acorde fundamental:
+      A = Lá, B = Si, C = Dó, D = Ré, E = Mi, F = Fá, G = Sol. Por exemplo, se uma canção 
+      está cifrada como **“C – G – Am – F”**, isso indica uma progressão de acordes: Dó 
+      maior, Sol maior, Lá menor, Fá maior. Símbolos adicionais especificam o tipo de 
+      acorde: **m** minúsculo indica acorde menor (e sua ausência implica maior), o número 
+      **7** indica uma sétima dominante (ex: G7 é Sol com sétima menor), **M7** ou **7M** 
+      pode indicar sétima maior (ex: C7M, dó com sétima maior), acordes diminutos às vezes 
+      são marcados com ° ou <sup>dim</sup>, aumentados com <sup>+</sup>, e assim por 
+      diante. Um símbolo de sustenido (#) ou bemol (b) após a letra indica que o acorde 
+      está numa tonalidade elevada ou rebaixada (por exemplo, **F#** representa Fá# 
+      maior; **Eb** é Mi♭ maior). Ler cifras requer identificar rapidamente a letra 
+      (nota fundamental do acorde) e os símbolos que a acompanham para saber se é menor, 
+      maior, com sétima etc. A vantagem da cifra é sua praticidade: com alguns símbolos, 
+      o músico sabe quais acordes tocar, sem precisar ler todas as notas. Isso facilita 
+      acompanhar canções, especialmente para instrumentos harmônicos como violão e 
+      teclado, e é a base do chamado **“cifrão”** encontrado em muitos songbooks e 
+      repertórios de música popular.
+    </p>
+    <p class="en">
+      <strong>Chord symbols</strong> (also known as chord notation) are a shorthand 
+      way to indicate chords, very common in popular music and lead sheets for guitar 
+      or piano. Instead of writing out every note on a staff, the chord symbol system 
+      uses letters and characters. Each letter from A to G represents a fundamental 
+      note or chord root: A, B, C, D, E, F, G (in some regions, B is called H, but in 
+      the Americas and much of the world B = Si and H isn’t used). For example, if a 
+      song is charted as **“C – G – Am – F”**, it indicates a chord progression: C Major, 
+      G Major, A minor, F Major. Additional symbols specify the chord quality or type: 
+      a lowercase **m** indicates a minor chord (and its absence implies major), the 
+      number **7** alone usually indicates a dominant seventh chord (e.g., G7 means G 
+      major with a minor 7th), **M7** or Δ (delta) can indicate a major seventh (e.g., 
+      CΔ or Cmaj7 for C major 7th), diminished chords are sometimes marked with ° or 
+      <sup>dim</sup>, augmented with <sup>+</sup>, etc. A sharp (#) or flat (b) sign 
+      after the letter indicates the chord root is raised or lowered (for instance, 
+      **F#** means F-sharp major; **Eb** means E-flat major). Reading chord symbols 
+      involves quickly recognizing the letter (the chord’s root note) and any symbols 
+      attached to determine if it’s major, minor, seventh, and so forth. The advantage 
+      of chord notation is its practicality: with just a few characters, a musician 
+      knows what chord to play without reading every note. This makes it easy to 
+      accompany songs, especially on harmony instruments like guitar or keyboard, and 
+      it’s the foundation of the **“lead sheet”** style found in many songbooks and 
+      pop/jazz charts.
+    </p>
+    <p class="es">
+      El <strong>cifrado de acordes</strong> es una forma de notación abreviada para 
+      indicar acordes, muy común en la música popular y en las partituras simplificadas 
+      para guitarra o piano. En lugar de escribir todas las notas en el pentagrama, el 
+      cifrado utiliza letras y caracteres. Cada letra de la A a la G representa una nota 
+      o acorde fundamental: A = La, B = Si (en algunos países B se llama H, pero en la 
+      notación anglosajona B equivale a Si), C = Do, D = Re, E = Mi, F = Fa, G = Sol. Por 
+      ejemplo, si una canción tiene los acordes **“C – G – Am – F”**, indica una progresión 
+      de acordes: Do mayor, Sol mayor, La menor, Fa mayor. Los símbolos adicionales 
+      especifican la cualidad del acorde: una **m** minúscula indica acorde menor (si no 
+      hay m, se sobreentiende que es mayor); el número **7** solo normalmente indica un 
+      acorde de séptima dominante (por ej., G7 es Sol mayor con séptima menor); **M7** o 
+      Maj7 puede indicar séptima mayor (por ej., Cmaj7, Do con séptima mayor); los acordes 
+      disminuidos a veces se marcan con ° o <sup>dim</sup>, los aumentados con <sup>+</sup>, 
+      etc. Un símbolo de sostenido (#) o bemol (b) junto a la letra indica que la nota 
+      fundamental del acorde se sube o baja (por ejemplo, **F#** significa Fa sostenido 
+      mayor; **Eb** es Mi bemol mayor). Leer cifrados de acordes requiere reconocer 
+      rápidamente la letra (la nota fundamental) y los símbolos adjuntos para determinar 
+      si el acorde es mayor, menor, de séptima, etc. La ventaja del cifrado es su 
+      practicidad: con pocos caracteres, el músico sabe qué acorde tocar sin leer todas 
+      las notas. Esto facilita acompañar canciones, especialmente en instrumentos 
+      armónicos como la guitarra o el teclado, y es la base de las **partituras cifradas** 
+      que se encuentran en muchos cancioneros de música popular.
+    </p>
+  </section>
+
+  <!-- Seção: Acordes & Harmonia -->
+  <section id="sec-acordes" class="category-section">
+    <h2 class="pt">Acordes &amp; Harmonia</h2>
+    <h2 class="en">Chords &amp; Harmony</h2>
+    <h2 class="es">Acordes y Armonía</h2>
+
+    <p class="pt">
+      A <strong>harmonia</strong> trata da forma como os acordes são construídos e 
+      encadeados em uma música. Um <strong>acorde</strong> é um conjunto de notas tocadas 
+      simultaneamente. O tipo mais básico é o acorde de tríade (três notas): por exemplo, 
+      Dó maior consiste nas notas Dó-Mi-Sol (tônica, terça e quinta da escala maior). Dó 
+      menor, por sua vez, é Dó-Mib-Sol. As tríades podem ser <em>maiores</em> (terça 
+      maior + quinta justa), <em>menores</em> (terça menor + quinta justa), <em>diminutas</em> 
+      (terça menor + quinta diminuta) ou <em>aumentadas</em> (terça maior + quinta 
+      aumentada). Além das tríades, há os acordes com sétima (quatro notas, adicionando 
+      a sétima à tríade) muito usados no jazz e na música pop, e extensões como nona, 
+      décima primeira, décima terceira em contextos mais sofisticados. Os acordes dentro 
+      de uma tonalidade formam o <strong>campo harmônico</strong>, numerados em graus 
+      romanos: I, II, III, IV, V, VI, VII (onde cada grau corresponde a um acorde da 
+      escala). Por exemplo, no campo harmônico de Dó maior: I = C (dó maior), II = Dm 
+      (ré menor), III = Em (mi menor), IV = F (fá maior), V = G (sol maior), VI = Am 
+      (lá menor), VII° = B° (si diminuto). Certos graus possuem funções harmônicas: o 
+      grau I é a <em>tônica</em> (centro de repouso), o V é a <em>dominante</em> (tende a 
+      resolver na tônica), o IV é a <em>subdominante</em>, etc. Uma <strong>progressão 
+      harmônica</strong> é a sequência de acordes numa música; progressões comuns incluem 
+      cadências como II–V–I no jazz ou I–V–vi–IV na música pop. O estudo de harmonia 
+      também aborda como fazer a <em>condução de vozes</em> (transição suave das notas 
+      de um acorde para outro) evitando movimentos bruscos, e como acrescentar variações 
+      (como acordes de empréstimo modal, substituições, modulações para outras tonalidades). 
+      Dominar acordes e harmonia permite ao músico compreender a estrutura de praticamente 
+      qualquer música, facilitando a composição, o arranjo e a improvisação com coerência 
+      musical.
+    </p>
+    <p class="en">
+      <strong>Harmony</strong> deals with how chords are constructed and connected in a 
+      piece of music. A <strong>chord</strong> is a set of notes played together. The 
+      most basic type is a triad (three-note chord): for example, C major consists of 
+      the notes C-E-G (root, third, and fifth of the major scale). C minor, on the other 
+      hand, is C-E♭-G. Triads can be <em>major</em> (major third + perfect fifth), 
+      <em>minor</em> (minor third + perfect fifth), <em>diminished</em> (minor third + 
+      diminished fifth), or <em>augmented</em> (major third + augmented fifth). Beyond 
+      triads, there are seventh chords (four notes, adding the seventh to the triad), 
+      which are very common in jazz and pop, and extended chords like ninths, elevenths, 
+      thirteenths in more advanced contexts. The chords within a key constitute the 
+      <strong>diatonic chord set</strong> (or harmonized scale), often labeled with Roman 
+      numerals I, II, III, IV, V, VI, VII (each numeral corresponds to a chord built on 
+      that scale degree). For example, in the key of C major: I = C (C major), II = Dm 
+      (D minor), III = Em (E minor), IV = F (F major), V = G (G major), VI = Am (A minor), 
+      VII° = B° (B diminished). Certain degrees have harmonic functions: I is the 
+      <em>tonic</em> (home chord of rest), V is the <em>dominant</em> (which wants to 
+      resolve to tonic), IV is the <em>subdominant</em>, etc. A <strong>chord progression</strong> 
+      is the sequence of chords in a song; common progressions include cadences like 
+      II–V–I in jazz or I–V–vi–IV in pop music. The study of harmony also covers how to 
+      achieve smooth <em>voice leading</em> (moving the notes from one chord to the next 
+      with minimal leaps), and how to add chord variations (such as modal interchange, 
+      substitute chords, or modulations to new keys). Mastering chords and harmony enables 
+      a musician to understand the structure of virtually any song and makes it easier to 
+      compose, arrange, or improvise with musical coherence.
+    </p>
+    <p class="es">
+      La <strong>armonía</strong> se ocupa de cómo se construyen y enlazan los acordes en 
+      una pieza musical. Un <strong>acorde</strong> es un conjunto de notas que suenan a la 
+      vez. El tipo más básico es la tríada (acorde de tres notas): por ejemplo, Do mayor 
+      consiste en las notas Do-Mi-Sol (tónica, tercera y quinta de la escala mayor). Do 
+      menor, en cambio, es Do-Mi♭-Sol. Las tríadas pueden ser <em>mayores</em> (tercera 
+      mayor + quinta justa), <em>menores</em> (tercera menor + quinta justa), 
+      <em>disminuidas</em> (tercera menor + quinta disminuida) o <em>aumentadas</em> 
+      (tercera mayor + quinta aumentada). Más allá de las tríadas, existen los acordes de 
+      séptima (cuatro notas, añadiendo la séptima a la tríada), muy usados en jazz y pop, 
+      y acordes con extensiones como novenas, oncenas, trecenas en contextos más avanzados. 
+      Los acordes dentro de una tonalidad forman el <strong>campo armónico diatónico</strong>, 
+      a menudo indicado con números romanos I, II, III, IV, V, VI, VII (cada número 
+      corresponde a un acorde construido sobre ese grado de la escala). Por ejemplo, en 
+      la tonalidad de Do mayor: I = C (Do mayor), II = Dm (Re menor), III = Em (Mi menor), 
+      IV = F (Fa mayor), V = G (Sol mayor), VI = Am (La menor), VII° = B° (Si disminuido). 
+      Ciertos grados cumplen funciones armónicas: I es la <em>tónica</em> (acorde de reposo), 
+      V es la <em>dominante</em> (tiende a resolver en la tónica), IV es la 
+      <em>subdominante</em>, etc. Una <strong>progresión de acordes</strong> es la secuencia 
+      de acordes de una canción; progresiones comunes incluyen cadencias como II–V–I en jazz 
+      o I–V–vi–IV en música pop. El estudio de la armonía también abarca cómo lograr una 
+      buena <em>conducción de voces</em> (moviendo las notas de un acorde al siguiente con 
+      mínimos saltos) y cómo añadir variaciones de acordes (como préstamos modales, acordes 
+      sustitutos o modulaciones a nuevas tonalidades). Dominar los acordes y la armonía 
+      permite al músico comprender la estructura de casi cualquier canción y facilita 
+      componer, arreglar o improvisar con coherencia musical.
+    </p>
+  </section>
+
+  <!-- Seção: História da Música -->
+  <section id="sec-historia" class="category-section">
+    <h2 class="pt">História da Música &amp; Teoria</h2>
+    <h2 class="en">Music History &amp; Theory</h2>
+    <h2 class="es">Historia de la Música y Teoría</h2>
+
+    <p class="pt">
+      A <strong>história da música</strong> acompanha a evolução dos estilos musicais e, 
+      paralelamente, do pensamento teórico musical através dos séculos. Na Antiguidade, 
+      filósofos e estudiosos – como os gregos Pitágoras, Platão e Aristóteles – já 
+      investigavam matematicamente os sons e refletiam sobre os efeitos da música na 
+      alma e na sociedade. Por exemplo, Pitágoras (c. 550 a.C.) descobriu relações 
+      numéricas nos intervalos musicais (como a proporção 2:1 da oitava ou 3:2 da 
+      quinta justa)21, estabelecendo bases para sistemas de afinação. Na Idade 
+      Média europeia (aprox. séc. V ao XV), desenvolveu-se a notação musical moderna a 
+      partir do uso do tetragrama pelo monge Guido de Arezzo, e a teoria musical estava 
+      ligada principalmente à música sacra (canto gregoriano e modos eclesiásticos). No 
+      Renascimento (séc. XV-XVI), houve a expansão dos modos e maior uso de polifonia, 
+      com teóricos começando a codificar regras de contraponto. O período Barroco 
+      (1600-1750) marcou o estabelecimento do sistema tonal maior-menor: compositores 
+      como J.S. Bach demonstraram e documentaram as regras de harmonia tonal (progressões 
+      de acordes, resolução de dissonâncias etc.) que dominariam a música ocidental 
+      até o século XIX22. No período Clássico e Romântico (1750-1900), a 
+      linguagem tonal foi enriquecida – modulações mais distantes, cromatismos – até 
+      culminar em ruptura no início do século XX, quando compositores como Schoenberg 
+      propuseram o atonalismo (ausência de centro tonal) e outros exploraram novas 
+      escalas e sistemas (modos de jazz, escalas exóticas, música modal moderna). 
+      Enquanto isso, no jazz e na música popular do século XX, surgiu uma teoria 
+      própria: por exemplo, uso extensivo de acordes de sétima, blues (com sua escala 
+      de blues), harmonias modais no rock, etc. Em âmbito global, diversas culturas 
+      possuem seus próprios sistemas teóricos (música indiana com raga, música árabe 
+      com seus maqamat, música chinesa com sua escala pentatônica antiga, etc.), o que 
+      mostra que a teoria musical é uma necessidade universal onde quer que haja 
+      música estruturada23. Em suma, a história da teoria musical reflete 
+      a busca contínua da humanidade por compreender e organizar os sons – uma jornada 
+      que vai dos antigos tratados gregos e medievais até as teorias contemporâneas que 
+      estudam desde músicas folclóricas até música computacional.
+    </p>
+    <p class="en">
+      The <strong>history of music</strong> traces the evolution of musical styles and, 
+      in parallel, the development of theoretical thought about music through the 
+      centuries. In Antiquity, philosophers and scholars – such as the Greek thinkers 
+      Pythagoras, Plato, and Aristotle – investigated the mathematical nature of sounds 
+      and pondered music’s effects on the soul and society. For example, Pythagoras 
+      (c. 550 BCE) discovered numerical ratios in musical intervals (like the 2:1 ratio 
+      for the octave or 3:2 for the perfect fifth)24, laying the groundwork 
+      for tuning systems. In the European Middle Ages (approx. 5th–15th centuries), 
+      modern musical notation was developed (e.g., the four-line staff of Guido of 
+      Arezzo), and music theory centered mainly on sacred music (Gregorian chant and 
+      church modes). During the Renaissance (15th–16th c.), musical modes were expanded 
+      and polyphony flourished, with theorists beginning to codify counterpoint rules. 
+      The Baroque period (1600–1750) saw the establishment of the major-minor tonal 
+      system: composers like J.S. Bach demonstrated and codified tonal harmony rules 
+      (chord progressions, resolution of dissonance, etc.) that would dominate Western 
+      music up to the 19th century25. In the Classical and Romantic eras 
+      (1750–1900), the tonal language was enriched – with more distant modulations and 
+      chromaticism – until it eventually led to a break in the early 20th century, when 
+      composers like Schoenberg introduced atonality (absence of a tonal center) and 
+      others explored new scales and systems (e.g., jazz modes, exotic scales, modern 
+      modal music). Meanwhile, in 20th-century jazz and popular music, a distinct theory 
+      emerged: for example, extensive use of seventh chords, the blues with its blues 
+      scale, modal harmonies in rock, etc. Globally, many cultures have their own 
+      theoretical systems (Indian music with ragas, Arabic music with maqamat, Chinese 
+      music with ancient pentatonic scales, etc.), which demonstrates that music theory 
+      is a universal need wherever structured music exists26. In summary, 
+      the history of music theory reflects humanity’s ongoing quest to understand and 
+      organize sound – a journey that spans from ancient Greek and medieval treatises 
+      to contemporary theories that examine everything from folk traditions to computer-
+      generated music.
+    </p>
+    <p class="es">
+      La <strong>historia de la música</strong> rastrea la evolución de los estilos 
+      musicales y, en paralelo, el desarrollo del pensamiento teórico musical a lo largo 
+      de los siglos. En la Antigüedad, filósofos y eruditos – como los griegos Pitágoras, 
+      Platón y Aristóteles – investigaron la naturaleza matemática de los sonidos y 
+      reflexionaron sobre los efectos de la música en el alma y la sociedad. Por ejemplo, 
+      Pitágoras (c. 550 a.C.) descubrió proporciones numéricas en los intervalos musicales 
+      (como la proporción 2:1 para la octava o 3:2 para la quinta justa)27, 
+      sentando las bases de los sistemas de afinación. En la Edad Media europea (aprox. 
+      siglos V–XV), se desarrolló la notación musical moderna (por ejemplo, el tetragrama 
+      de Guido d’Arezzo) y la teoría musical se centró principalmente en la música sacra 
+      (canto gregoriano y modos eclesiásticos). Durante el Renacimiento (s. XV–XVI), se 
+      ampliaron los modos y floreció la polifonía, y los teóricos empezaron a codificar 
+      reglas de contrapunto. El período Barroco (1600–1750) vio el establecimiento del 
+      sistema tonal de mayor-menor: compositores como J.S. Bach demostraron y documentaron 
+      las reglas de la armonía tonal (progresiones de acordes, resolución de disonancias, 
+      etc.) que dominarían la música occidental hasta el siglo XIX28. En las 
+      eras Clásica y Romántica (1750–1900), el lenguaje tonal se enriqueció – con 
+      modulaciones más lejanas y cromatismos – hasta que finalmente condujo a una ruptura 
+      a inicios del siglo XX, cuando compositores como Schoenberg introdujeron la atonalidad 
+      (ausencia de centro tonal) y otros exploraron nuevas escalas y sistemas (por ej., 
+      modos del jazz, escalas exóticas, música modal moderna). Paralelamente, en el jazz 
+      y la música popular del siglo XX surgió una teoría propia: por ejemplo, el uso 
+      extendido de acordes de séptima, el blues (con su escala de blues), armonías modales 
+      en el rock, etc. A nivel global, muchas culturas tienen sus propios sistemas teóricos 
+      (la música india con los ragas, la música árabe con los maqamat, la música china con 
+      sus escalas pentatónicas antiguas, etc.), lo que demuestra que la teoría musical es 
+      una necesidad universal allí donde exista música estructurada29. En 
+      resumen, la historia de la teoría musical refleja la búsqueda continua de la 
+      humanidad por comprender y organizar los sonidos – un viaje que abarca desde los 
+      tratados antiguos griegos y medievales hasta las teorías contemporáneas que examinan 
+      desde las tradiciones folclóricas hasta la música por computadora.
+    </p>
+  </section>
+
+  <!-- Inclusão do script JS -->
+  <script src="script.js"></script>
+</body>
+</html>
