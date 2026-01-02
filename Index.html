@@ -1,220 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <meta name="theme-color" content="#0b0b0f" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IMVpedia — Enciclopédia de Teoria Musical</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Fonte opcional (funciona mesmo se não carregar) -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body class="lang-pt">
-  <div class="app">
 
-    <!-- TOP BAR -->
-    <header class="topbar">
-      <div class="topbar__left">
-        <div class="brand" role="banner" aria-label="IMVpedia">
-          <div class="brand__mark" aria-hidden="true">IMV</div>
-          <div class="brand__text">
-            <div class="brand__name">IMVpedia</div>
-            <div class="brand__tagline pt">Enciclopédia de Teoria Musical do IMV — Instituto Musical Vale</div>
-            <div class="brand__tagline en">IMV’s Music Theory Encyclopedia — Instituto Musical Vale</div>
-            <div class="brand__tagline es">Enciclopedia de Teoría Musical del IMV — Instituto Musical Vale</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="topbar__right">
-        <div class="lang">
-          <button class="lang__btn active" id="btn-pt" type="button" aria-label="Português" data-lang="pt">PT</button>
-          <button class="lang__btn" id="btn-en" type="button" aria-label="English" data-lang="en">EN</button>
-          <button class="lang__btn" id="btn-es" type="button" aria-label="Español" data-lang="es">ES</button>
-        </div>
-      </div>
-    </header>
-
-    <!-- HERO -->
-    <section class="hero" aria-label="Destaque">
-      <div class="hero__bg" aria-hidden="true"></div>
-      <div class="hero__content">
-        <h1 class="hero__title pt">Tudo de teoria musical, organizado e didático.</h1>
-        <h1 class="hero__title en">All music theory, organized and student-friendly.</h1>
-        <h1 class="hero__title es">Toda la teoría musical, organizada y didáctica.</h1>
-
-        <p class="hero__subtitle pt">
-          Pesquise por escalas, intervalos, ritmo, notação, cifras, harmonia, história e muito mais.
-        </p>
-        <p class="hero__subtitle en">
-          Search scales, intervals, rhythm, notation, chord symbols, harmony, history, and more.
-        </p>
-        <p class="hero__subtitle es">
-          Busca escalas, intervalos, ritmo, notación, cifrado, armonía, historia y más.
-        </p>
-
-        <div class="hero__actions">
-          <div class="search" role="search">
-            <span class="search__icon" aria-hidden="true">⌕</span>
-            <input id="searchInput" class="search__input" type="search"
-              placeholder="Buscar no IMVpedia…"
-              aria-label="Buscar no IMVpedia" />
-            <button id="clearSearch" class="search__clear" type="button" aria-label="Limpar busca">✕</button>
-          </div>
-
-          <div class="chips" aria-label="Atalhos de categoria">
-            <button class="chip active" type="button" data-category="all">
-              <span class="pt">Tudo</span><span class="en">All</span><span class="es">Todo</span>
-            </button>
-            <button class="chip" type="button" data-category="scales">
-              <span class="pt">Escalas</span><span class="en">Scales</span><span class="es">Escalas</span>
-            </button>
-            <button class="chip" type="button" data-category="intervals">
-              <span class="pt">Intervalos</span><span class="en">Intervals</span><span class="es">Intervalos</span>
-            </button>
-            <button class="chip" type="button" data-category="rhythm">
-              <span class="pt">Ritmo</span><span class="en">Rhythm</span><span class="es">Ritmo</span>
-            </button>
-            <button class="chip" type="button" data-category="notation">
-              <span class="pt">Notação</span><span class="en">Notation</span><span class="es">Notación</span>
-            </button>
-            <button class="chip" type="button" data-category="harmony">
-              <span class="pt">Harmonia</span><span class="en">Harmony</span><span class="es">Armonía</span>
-            </button>
-            <button class="chip" type="button" data-category="history">
-              <span class="pt">História</span><span class="en">History</span><span class="es">Historia</span>
-            </button>
-          </div>
-        </div>
-
-        <div class="hero__hint">
-          <span class="pt">Dica: toque em um card para abrir o termo completo.</span>
-          <span class="en">Tip: tap a card to open the full entry.</span>
-          <span class="es">Tip: toca una tarjeta para abrir la entrada completa.</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- MAIN -->
-    <main class="main" id="mainContent" aria-label="Conteúdo principal">
-      <!-- Carrosséis entram via JS -->
-      <div id="rows"></div>
-
-      <!-- Resultado da busca (grid) -->
-      <section id="results" class="results hidden" aria-label="Resultados da busca">
-        <div class="results__head">
-          <h2 class="results__title">
-            <span class="pt">Resultados</span>
-            <span class="en">Results</span>
-            <span class="es">Resultados</span>
-          </h2>
-          <div class="results__meta" id="resultsMeta"></div>
-        </div>
-        <div id="resultsGrid" class="grid"></div>
-      </section>
-
-      <!-- Empty State -->
-      <section id="emptyState" class="empty hidden" aria-label="Sem resultados">
-        <div class="empty__card">
-          <div class="empty__icon" aria-hidden="true">⌕</div>
-          <h3 class="empty__title">
-            <span class="pt">Nada encontrado.</span>
-            <span class="en">No matches found.</span>
-            <span class="es">No se encontraron resultados.</span>
-          </h3>
-          <p class="empty__text">
-            <span class="pt">Tente termos como “escala maior”, “síncope”, “armadura”.</span>
-            <span class="en">Try “major scale”, “syncopation”, “key signature”.</span>
-            <span class="es">Prueba “escala mayor”, “síncopa”, “armadura”.</span>
-          </p>
-        </div>
-      </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer__wrap">
-        <div class="footer__left">
-          <div class="footer__brand">IMVpedia</div>
-          <div class="footer__small pt">Enciclopédia do IMV — Instituto Musical Vale</div>
-          <div class="footer__small en">IMV Encyclopedia — Instituto Musical Vale</div>
-          <div class="footer__small es">Enciclopedia del IMV — Instituto Musical Vale</div>
-        </div>
-        <div class="footer__right">
-          <div class="footer__small pt">© <span id="year"></span> — Conteúdo educacional. Atualize os verbetes via script.js.</div>
-          <div class="footer__small en">© <span id="year2"></span> — Educational content. Update entries via script.js.</div>
-          <div class="footer__small es">© <span id="year3"></span> — Contenido educativo. Actualiza las entradas en script.js.</div>
-        </div>
-      </div>
-    </footer>
-  </div>
-
-  <!-- MODAL DETALHE -->
-  <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-label="Detalhe do termo">
-    <div class="modal__overlay" data-close="1"></div>
-    <div class="modal__panel" role="document">
-      <div class="modal__top">
-        <div class="modal__titlewrap">
-          <div id="modalCategory" class="modal__pill"></div>
-          <h2 id="modalTitle" class="modal__title"></h2>
-          <div id="modalAliases" class="modal__aliases"></div>
-        </div>
-        <button id="modalClose" class="modal__close" type="button" aria-label="Fechar">✕</button>
-      </div>
-
-      <div class="modal__body">
-        <div id="modalImageWrap" class="modal__imagewrap hidden" aria-label="Imagem do termo">
-          <img id="modalImage" class="modal__image" alt="Imagem do termo" />
-        </div>
-
-        <div class="modal__section">
-          <h3 class="modal__h3">
-            <span class="pt">Definição</span><span class="en">Definition</span><span class="es">Definición</span>
-          </h3>
-          <div id="modalDefinition" class="modal__text"></div>
-        </div>
-
-        <div class="modal__section">
-          <h3 class="modal__h3">
-            <span class="pt">Essência</span><span class="en">Core idea</span><span class="es">Idea central</span>
-          </h3>
-          <ul id="modalBullets" class="modal__list"></ul>
-        </div>
-
-        <div class="modal__section">
-          <h3 class="modal__h3">
-            <span class="pt">Exemplos</span><span class="en">Examples</span><span class="es">Ejemplos</span>
-          </h3>
-          <div id="modalExamples" class="modal__text"></div>
-        </div>
-
-        <div class="modal__section">
-          <h3 class="modal__h3">
-            <span class="pt">Veja também</span><span class="en">See also</span><span class="es">Ver también</span>
-          </h3>
-          <div id="modalSeeAlso" class="modal__seealso"></div>
-        </div>
-      </div>
-
-      <div class="modal__bottom">
-        <button id="modalPrev" class="btn btn--ghost" type="button">
-          <span class="pt">Anterior</span><span class="en">Previous</span><span class="es">Anterior</span>
-        </button>
-        <button id="modalNext" class="btn btn--ghost" type="button">
-          <span class="pt">Próximo</span><span class="en">Next</span><span class="es">Siguiente</span>
-        </button>
-        <button id="modalRandom" class="btn" type="button">
-          <span class="pt">Aleatório</span><span class="en">Random</span><span class="es">Aleatorio</span>
-        </button>
-      </div>
+<header class="topbar">
+  <div class="logo">
+    <span class="logo-badge">IMV</span>
+    <div>
+      <h1>IMVpedia</h1>
+      <p class="pt">Enciclopédia de Teoria Musical do Instituto Musical Vale</p>
+      <p class="en">Music Theory Encyclopedia — Instituto Musical Vale</p>
+      <p class="es">Enciclopedia de Teoría Musical — Instituto Musical Vale</p>
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <div class="lang-switch">
+    <button data-lang="pt" class="active">PT</button>
+    <button data-lang="en">EN</button>
+    <button data-lang="es">ES</button>
+  </div>
+</header>
+
+<section class="hero">
+  <h2 class="pt">Todo o conhecimento de teoria musical em um só lugar</h2>
+  <h2 class="en">All music theory knowledge in one place</h2>
+  <h2 class="es">Todo el conocimiento de teoría musical en un solo lugar</h2>
+
+  <input type="search" id="search" placeholder="Buscar no IMVpedia...">
+</section>
+
+<main id="content"></main>
+
+<footer>
+  <p>© <span id="year"></span> IMVpedia — Instituto Musical Vale</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
