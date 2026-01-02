@@ -6,7 +6,6 @@
   <meta name="theme-color" content="#0b0b0f" />
   <title>IMVpedia — Enciclopédia de Teoria Musical</title>
 
-  <!-- Fonte opcional (se não carregar, o site continua perfeito) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -17,7 +16,7 @@
 <body class="lang-pt">
   <div class="app">
 
-    <!-- TOP BAR -->
+    <!-- TOPBAR -->
     <header class="topbar">
       <div class="topbar__left">
         <div class="brand" aria-label="IMVpedia">
@@ -32,6 +31,13 @@
       </div>
 
       <div class="topbar__right">
+        <div class="topbar__pill">
+          <span class="pill__label pt">Versão</span>
+          <span class="pill__label en">Version</span>
+          <span class="pill__label es">Versión</span>
+          <span class="pill__value">1.1</span>
+        </div>
+
         <div class="lang" aria-label="Idioma">
           <button class="lang__btn active" id="btn-pt" type="button" data-lang="pt">PT</button>
           <button class="lang__btn" id="btn-en" type="button" data-lang="en">EN</button>
@@ -44,18 +50,25 @@
     <section class="hero" aria-label="Destaque">
       <div class="hero__bg" aria-hidden="true"></div>
       <div class="hero__content">
-        <h1 class="hero__title pt">Teoria musical, com cara de plataforma premium.</h1>
-        <h1 class="hero__title en">Music theory with a premium platform feel.</h1>
-        <h1 class="hero__title es">Teoría musical con estética premium.</h1>
+        <div class="hero__badge">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="pt">Base completa de fundamentos</span>
+          <span class="en">Complete fundamentals base</span>
+          <span class="es">Base completa de fundamentos</span>
+        </div>
+
+        <h1 class="hero__title pt">Teoria musical com visual premium, estilo plataforma.</h1>
+        <h1 class="hero__title en">Music theory with a premium platform look.</h1>
+        <h1 class="hero__title es">Teoría musical con estética premium, tipo plataforma.</h1>
 
         <p class="hero__subtitle pt">
-          Explore por categorias, pesquise qualquer termo e abra verbetes completos em 1 toque.
+          Navegue por categorias em carrosséis, pesquise qualquer termo e abra verbetes completos em 1 toque.
         </p>
         <p class="hero__subtitle en">
-          Browse categories, search any term, and open full entries in one tap.
+          Browse categories in carousels, search any term, and open full entries in one tap.
         </p>
         <p class="hero__subtitle es">
-          Explora categorías, busca cualquier término y abre entradas completas con un toque.
+          Explora categorías en carruseles, busca cualquier término y abre entradas completas con un toque.
         </p>
 
         <div class="hero__actions">
@@ -69,20 +82,26 @@
             <button class="chip active" type="button" data-category="all">
               <span class="pt">Tudo</span><span class="en">All</span><span class="es">Todo</span>
             </button>
-            <button class="chip" type="button" data-category="scales">
-              <span class="pt">Escalas</span><span class="en">Scales</span><span class="es">Escalas</span>
-            </button>
-            <button class="chip" type="button" data-category="intervals">
-              <span class="pt">Intervalos</span><span class="en">Intervals</span><span class="es">Intervalos</span>
-            </button>
-            <button class="chip" type="button" data-category="rhythm">
-              <span class="pt">Ritmo</span><span class="en">Rhythm</span><span class="es">Ritmo</span>
+            <button class="chip" type="button" data-category="foundations">
+              <span class="pt">Fundamentos</span><span class="en">Foundations</span><span class="es">Fundamentos</span>
             </button>
             <button class="chip" type="button" data-category="notation">
               <span class="pt">Notação</span><span class="en">Notation</span><span class="es">Notación</span>
             </button>
+            <button class="chip" type="button" data-category="rhythm">
+              <span class="pt">Ritmo</span><span class="en">Rhythm</span><span class="es">Ritmo</span>
+            </button>
+            <button class="chip" type="button" data-category="intervals">
+              <span class="pt">Intervalos</span><span class="en">Intervals</span><span class="es">Intervalos</span>
+            </button>
+            <button class="chip" type="button" data-category="scales">
+              <span class="pt">Escalas</span><span class="en">Scales</span><span class="es">Escalas</span>
+            </button>
             <button class="chip" type="button" data-category="harmony">
               <span class="pt">Harmonia</span><span class="en">Harmony</span><span class="es">Armonía</span>
+            </button>
+            <button class="chip" type="button" data-category="ear">
+              <span class="pt">Percepção</span><span class="en">Ear Training</span><span class="es">Percepción</span>
             </button>
             <button class="chip" type="button" data-category="history">
               <span class="pt">História</span><span class="en">History</span><span class="es">Historia</span>
@@ -91,9 +110,9 @@
         </div>
 
         <div class="hero__hint">
-          <span class="pt">Toque em um card para abrir o verbete completo.</span>
-          <span class="en">Tap a card to open the full entry.</span>
-          <span class="es">Toca una tarjeta para abrir la entrada completa.</span>
+          <span class="pt">Dica: use “/” para focar na busca. (Mobile: toque na barra)</span>
+          <span class="en">Tip: press “/” to focus search. (Mobile: tap the bar)</span>
+          <span class="es">Tip: presiona “/” para buscar. (Móvil: toca la barra)</span>
         </div>
       </div>
     </section>
@@ -102,7 +121,6 @@
     <main class="main" aria-label="Conteúdo">
       <div id="rows"></div>
 
-      <!-- RESULTADOS -->
       <section id="results" class="results hidden" aria-label="Resultados">
         <div class="results__head">
           <h2 class="results__title">
@@ -113,7 +131,6 @@
         <div id="resultsGrid" class="grid"></div>
       </section>
 
-      <!-- EMPTY -->
       <section id="emptyState" class="empty hidden" aria-label="Sem resultados">
         <div class="empty__card">
           <div class="empty__icon" aria-hidden="true">⌕</div>
@@ -121,9 +138,9 @@
             <span class="pt">Nada encontrado.</span><span class="en">No matches found.</span><span class="es">No se encontraron resultados.</span>
           </h3>
           <p class="empty__text">
-            <span class="pt">Experimente: “escala maior”, “armadura”, “síncope”, “tríade”.</span>
-            <span class="en">Try: “major scale”, “key signature”, “syncopation”, “triad”.</span>
-            <span class="es">Prueba: “escala mayor”, “armadura”, “síncopa”, “tríada”.</span>
+            <span class="pt">Tente: “clave”, “compasso 6/8”, “tríade”, “modo dórico”, “cadência”.</span>
+            <span class="en">Try: “clef”, “meter 6/8”, “triad”, “dorian mode”, “cadence”.</span>
+            <span class="es">Prueba: “clave”, “compás 6/8”, “tríada”, “modo dórico”, “cadencia”.</span>
           </p>
         </div>
       </section>
@@ -134,14 +151,14 @@
       <div class="footer__wrap">
         <div class="footer__left">
           <div class="footer__brand">IMVpedia</div>
-          <div class="footer__small pt">Enciclopédia do IMV — Instituto Musical Vale</div>
-          <div class="footer__small en">IMV Encyclopedia — Instituto Musical Vale</div>
-          <div class="footer__small es">Enciclopedia del IMV — Instituto Musical Vale</div>
+          <div class="footer__small pt">IMV — Instituto Musical Vale • Base 1.1 (Fundamentos completos)</div>
+          <div class="footer__small en">IMV — Instituto Musical Vale • Base 1.1 (Complete fundamentals)</div>
+          <div class="footer__small es">IMV — Instituto Musical Vale • Base 1.1 (Fundamentos completos)</div>
         </div>
         <div class="footer__right">
-          <div class="footer__small pt">© <span id="year"></span> — Base 1.0 (layout premium + verbetes iniciais)</div>
-          <div class="footer__small en">© <span id="year2"></span> — Base 1.0 (premium layout + starter entries)</div>
-          <div class="footer__small es">© <span id="year3"></span> — Base 1.0 (diseño premium + entradas iniciales)</div>
+          <div class="footer__small pt">© <span id="year"></span> • Toque nos cards para abrir verbetes.</div>
+          <div class="footer__small en">© <span id="year2"></span> • Tap cards to open entries.</div>
+          <div class="footer__small es">© <span id="year3"></span> • Toca las tarjetas para abrir entradas.</div>
         </div>
       </div>
     </footer>
