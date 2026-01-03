@@ -1,7 +1,3 @@
-/* IMVpedia — Dicionário (PT/EN/ES) — ETAPA 4 (BASE)
-   ✅ Você pode aumentar este arquivo quando quiser.
-*/
-
 window.IMVPEDIA_ENTRIES = [
   {
     id: "barline-measures",
@@ -27,8 +23,10 @@ window.IMVPEDIA_ENTRIES = [
       en: "Rehearsals often reference ‘measure 37’ for quick navigation.",
       es: "En ensayos se usa ‘compás 37’ para ubicarse rápido."
     },
+    tags: ["reading","notation","essentials","beginner"],
+    level: "beginner",
     aliases: ["barra de compasso", "barline", "measure", "compasso", "compás", "barra dupla"],
-    seeAlso: ["meter", "note-values"],
+    seeAlso: [],
     imageUrl: ""
   },
   {
@@ -55,8 +53,10 @@ window.IMVPEDIA_ENTRIES = [
       en: "6/8: ‘1-la-li 2-la-li’ (two big beats).",
       es: "6/8: ‘1-la-li 2-la-li’ (dos pulsos grandes)."
     },
+    tags: ["rhythm","meter","beginner","essentials"],
+    level: "beginner",
     aliases: ["compasso composto", "compound meter", "compás compuesto", "simples", "simple meter", "6/8"],
-    seeAlso: ["meter", "subdivision"],
+    seeAlso: [],
     imageUrl: ""
   },
   {
@@ -83,8 +83,10 @@ window.IMVPEDIA_ENTRIES = [
       en: "7/8 can feel like 2+2+3 (short-short-long).",
       es: "7/8 puede sentirse 2+2+3 (corto-corto-largo)."
     },
+    tags: ["reading","notation","intermediate"],
+    level: "intermediate",
     aliases: ["beaming", "feixes", "barras", "grouping", "agrupamento", "7/8"],
-    seeAlso: ["meter", "simple-vs-compound"],
+    seeAlso: [],
     imageUrl: ""
   },
   {
@@ -111,8 +113,10 @@ window.IMVPEDIA_ENTRIES = [
       en: "4/4 vs 3/4: realigns every 12 beats (3 bars of 4/4 = 4 bars of 3/4).",
       es: "4/4 vs 3/4: se alinea cada 12 pulsos (3 compases 4/4 = 4 compases 3/4)."
     },
+    tags: ["rhythm","advanced","polymeter"],
+    level: "advanced",
     aliases: ["polimetria", "polymeter", "polimetría", "métrica diferente", "odd meter"],
-    seeAlso: ["meter", "polyrhythm"],
+    seeAlso: [],
     imageUrl: ""
   },
   {
@@ -135,8 +139,10 @@ window.IMVPEDIA_ENTRIES = [
       es: ["Crea transiciones naturales.", "Requiere subdivisión clara.", "Se escribe con equivalencias."]
     },
     examples: { pt: "Ex.: ‘♪ = ♩’ (colcheia vira o novo pulso).", en: "Example: ‘♪ = ♩’ (eighth becomes the new beat).", es: "Ej.: ‘♪ = ♩’ (corchea pasa a ser el pulso)." },
+    tags: ["rhythm","advanced","tempo"],
+    level: "advanced",
     aliases: ["modulação métrica", "metric modulation", "modulación métrica", "equivalência", "tempo change"],
-    seeAlso: ["subdivision", "tempo"],
+    seeAlso: [],
     imageUrl: ""
   },
   {
@@ -150,7 +156,7 @@ window.IMVPEDIA_ENTRIES = [
     },
     definition: {
       pt: "Um método sólido combina <b>clareza</b> (o que estudar), <b>medição</b> (metrônomo/gravador), <b>progressão</b> (lento→rápido) e <b>revisão</b> (retomar conteúdos). A teoria vira música quando você <b>canta</b>, <b>toca</b> e <b>analisa</b> exemplos reais.",
-      en: "A solid framework combines <b>clarity</b> (what to practice), <b>measurement</b> (metronome/recording), <b>progression</b> (slow→fast), and <b>review</b> (returning to material). Theory becomes music when you <b>sing</b>, <b>play</b>, and <b>analyze</b> real examples.",
+      en: "A solid framework combines <b>clarity</b>, <b>measurement</b>, <b>progression</b>, and <b>review</b>. Theory becomes music when you <b>sing</b>, <b>play</b>, and <b>analyze</b> real examples.",
       es: "Un buen método combina <b>claridad</b>, <b>medición</b>, <b>progresión</b> y <b>revisión</b>. La teoría se vuelve música cuando <b>cantas</b>, <b>tocas</b> y <b>analizas</b> ejemplos reales."
     },
     bullets: {
@@ -163,8 +169,10 @@ window.IMVPEDIA_ENTRIES = [
       en: "Daily plan (30 min): 10m rhythm + 10m scales/intervals + 10m analysis/dictation.",
       es: "Plan diario (30 min): 10m ritmo + 10m escalas/intervalos + 10m análisis/dictado."
     },
+    tags: ["essentials","beginner","study"],
+    level: "beginner",
     aliases: ["método de estudo", "practice routine", "rotina", "revisão espaçada", "spaced repetition"],
-    seeAlso: ["subdivision", "meter"],
+    seeAlso: [],
     imageUrl: ""
   }
 ];
