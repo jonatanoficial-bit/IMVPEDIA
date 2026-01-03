@@ -1,3 +1,4 @@
+// VERBETES (iguais aos anteriores, com tags/level)
 window.IMVPEDIA_ENTRIES = [
   {
     id: "barline-measures",
@@ -138,7 +139,11 @@ window.IMVPEDIA_ENTRIES = [
       en: ["Creates natural tempo transitions.", "Requires very clear subdivision.", "Often written with an equivalence marking."],
       es: ["Crea transiciones naturales.", "Requiere subdivisión clara.", "Se escribe con equivalencias."]
     },
-    examples: { pt: "Ex.: ‘♪ = ♩’ (colcheia vira o novo pulso).", en: "Example: ‘♪ = ♩’ (eighth becomes the new beat).", es: "Ej.: ‘♪ = ♩’ (corchea pasa a ser el pulso)." },
+    examples: {
+      pt: "Ex.: ‘♪ = ♩’ (colcheia vira o novo pulso).",
+      en: "Example: ‘♪ = ♩’ (eighth becomes the new beat).",
+      es: "Ej.: ‘♪ = ♩’ (corchea pasa a ser el pulso)."
+    },
     tags: ["rhythm","advanced","tempo"],
     level: "advanced",
     aliases: ["modulação métrica", "metric modulation", "modulación métrica", "equivalência", "tempo change"],
@@ -174,5 +179,21 @@ window.IMVPEDIA_ENTRIES = [
     aliases: ["método de estudo", "practice routine", "rotina", "revisão espaçada", "spaced repetition"],
     seeAlso: [],
     imageUrl: ""
+  }
+];
+
+// TRILHAS DE APRENDIZADO (novidade da Etapa 7)
+window.IMVPEDIA_TRACKS = [
+  {
+    id: "beginner-core",
+    title: { pt:"Iniciante — Fundamentos", en:"Beginner — Core", es:"Principiante — Núcleo" },
+    desc:  { pt:"Leitura básica, métrica simples e rotina de estudo.", en:"Basic reading, simple meter and a study routine.", es:"Lectura básica, compás simple y rutina de estudio." },
+    steps: ["barline-measures", "simple-vs-compound", "practice-framework"]
+  },
+  {
+    id: "rhythm-advanced",
+    title: { pt:"Ritmo — Avançado", en:"Rhythm — Advanced", es:"Ritmo — Avanzado" },
+    desc:  { pt:"Beaming em ímpares, polimetria e modulação métrica.", en:"Odd beaming, polymeter and metric modulation.", es:"Agrupación impar, polimetría y modulación métrica." },
+    steps: ["beaming-grouping", "polymeter", "metric-modulation"]
   }
 ];
