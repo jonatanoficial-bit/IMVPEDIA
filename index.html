@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <meta name="theme-color" content="#0b0d13" />
   <title>IMVpedia — Dicionário de Teoria Musical</title>
 
@@ -10,19 +10,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <!-- ✅ CORREÇÃO: o arquivo no seu zip se chama "style.css" -->
-  <link rel="stylesheet" href="./style.css?v=5" />
+  <!-- Se no seu projeto o arquivo chama style.css, mantenha assim -->
+  <link rel="stylesheet" href="./style.css?v=6" />
 
-  <!-- Conteúdo do dicionário (Base) -->
   <script defer src="./entries.js"></script>
-  <!-- App -->
   <script defer src="./script.js"></script>
 </head>
 
 <body>
   <div class="bg-noise" aria-hidden="true"></div>
 
-  <!-- TOP NAV -->
   <header class="topnav" id="topnav">
     <div class="topnav__inner">
       <a class="brand" href="#/">
@@ -63,12 +60,8 @@
     </div>
   </header>
 
-  <!-- APP ROOT -->
-  <main id="app" class="app" role="main" tabindex="-1">
-    <!-- Render via JS -->
-  </main>
+  <main id="app" class="app" role="main" tabindex="-1"></main>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer__inner">
       <div class="footer__left">
@@ -85,15 +78,14 @@
       <div class="footer__right">
         <a class="footer__link" href="#/">Início</a>
         <a class="footer__link" href="#/search">Buscar</a>
+        <a class="footer__link" href="#/favorites">Minha Lista</a>
         <a class="footer__link" href="#/admin">Admin</a>
       </div>
     </div>
   </footer>
 
-  <!-- Toast -->
   <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 
-  <!-- Modal -->
   <div class="modal" id="modal" aria-hidden="true">
     <div class="modal__backdrop" id="modalBackdrop"></div>
     <div class="modal__card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
